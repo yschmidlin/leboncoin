@@ -1,0 +1,96 @@
+
+/* On dÃ©fini les styles globaux Ã  notre site ; gÃ©nÃ©ralement la police de caractÃ¨re */
+body {
+    font-family:verdana;
+    font-size:12px;
+
+    /* On dÃ©fini une taille fixe pour notre site et on le centre au milieu de la page */
+    max-width:960px;margin:auto;
+}
+
+nav {
+    text-align:center;
+}
+
+nav li {
+    list-style-type: none;
+    display:inline-block;
+	padding:0px 10px;
+}
+
+nav li a {
+	color:black;
+}
+
+header img {margin:5px;}
+
+header ul {
+    margin: 20px 0px;
+}  
+
+header nav li {
+    border-left: 1px solid #999;
+    font-size:14px;
+}
+
+header nav li:first-child {
+    border-left: none;
+}
+
+#mainContent {
+    margin: 25px 0px;
+}
+
+section {float:left;width:75%;}
+
+aside {float:right;width:20%;padding:10px;text-align:center;background: none repeat scroll 0 0 #e3dccd;}
+aside .title {
+    background: none repeat scroll 0 0 #f60;
+    color: #fff;
+    font-weight: bold;
+    margin:10px;padding:10px;  
+}
+aside article.annonce-side {
+    height: 150px;
+    background-color:white;
+    margin:10px;padding:10px;
+}
+
+article.annonce {clear:both;height:125px;cursor:pointer;padding:10px;}
+article.annonce:hover {background: none repeat scroll 0 0 #eaebf0;}
+article.annonce div {float:left;}
+article.annonce .image {width:200px;height:100px;text-align:center;margin:0px 10px;}
+article.annonce img {width:175px;}
+article.annonce .description {width:300px;padding:5px;}
+
+
+footer {
+    clear:both;
+    padding:20px 0px;
+    text-align: center;
+    color:grey;
+}
+
+@media screen and (max-width:992px){
+	
+	}
+
+@media screen and (max-width:480px){
+	
+	aside {float:none; width:100%}
+	
+	section {float:none; width:100%}
+	
+
+	nav li{
+		list-style-type: disc;
+		display: list-item;
+	}
+	
+	header nav li {
+    border-left: none;
+    font-size:12px;
+	}
+	
+}
+
